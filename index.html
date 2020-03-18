@@ -7,83 +7,199 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 
-    <title>Ian Harris Portfolio</title>
+    <title>Ian Harris</title>
   </head>
-
   <body>
+
     <div class="container-fluid">
-      <nav class="navbar fixed-top">
-        <div class="col-lg-6">
-          <img class="logo" src="./logo.png" alt="">
-        </div>
-        <div class="col-lg-6 d-flex justify-content-end">
-          <div class="menu-circle"></div>
-        </div>
-      </nav>
 
-<!-- Landing Page -->
-
-      <div class="row align-items-center no-gutters hero">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-2 headline">
-          <h1>HELLO,<br>I'M<br>IAN</h1>
+      <!-- Navigation -->
+      <div class="row d-flex justify-content-between fixed-top menu">
+        <!-- Logo -->
+        <a class="logo" href="#home">
+          <img src="./Resources/logo.png" alt="Personal Logo for Ian Harris">
+        </a>
+        <!-- Menu -->
+        <div>
+          <div class="menu-button" onclick="showMenuList()"></div>
+          <div class="menu-list">
+            <ul>
+              <li><a href="#about">about</a></li>
+              <li><a href="#">projects</a></li>
+              <li><a href="#resume">resume</a></li>
+              <li><a href="#">contact</a></li>
+              <li onclick="hideMenuList()"><a>x</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="col-lg-6 green-rect"></div>
-        <div class="col-lg-2"></div>
       </div>
 
-      <div class="row align-items-center no-gutters job-title">
-        <div class="col-lg-10">
-          <h1>web developer<br>graphic designer</h1>
+        <!-- Landing Section -->
+        <div class="landing" id="home">
+          <div class="row d-flex align-items-center no-gutters">
+            <div class="col-xs-0 col-sm-2 col-md-2"></div>
+            <div class="col-xs-6 col-sm-2 col-md-2">
+              <h1 class="headline">HELLO,<br>I'M<br>IAN</h1>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 green-rect"></div>
+            <div class="col-xs-0 col-sm-2 col-md-2"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-4"></div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <h1 class="job-descript">web developer<br>graphic designer</h1>
+            </div>
+            <div class="col-xs-0 col-sm-2 col-md-2"></div>
+          </div>
         </div>
-        <div class="col-lg-2"></div>
-      </div>
 
-<!-- About Section -->
-
-      <div class="row no-gutters align-items-center about">
-        <div class="col-lg-2">
-          <h1>about</h1>
+        <!-- About Section -->
+        <div class="about spacing" id="about">
+          <div class="row d-flex align-items-center">
+            <div class="col-sm-1 col-md-2">
+              <!-- <h1 class="section-title">about</h1> -->
+            </div>
+            <div class="col-sm-10 col-md-8">
+              <p>
+                Hello, I’m Ian Harris. I’m a computer scientist, developer, graphic designer, and a soon to be graduate of Ole Miss. I have a passion for software development, web development, and graphic design.
+              </p>
+              <p>
+                Having been raised in the Memphis metro area, I am ready to venture out in search of cooler weather and hopefully settle down in the northern Midwest. When I am not doing school work, you can find me in my local knitting store or browsing through a second-hand video game store in search of my childhood favorites. Actually, my love for video games is what drove me to study computer science in college. Although I am very much in search of a real full-time job, my dream occupation is to become an indie game developer for the Nintendo Switch console and mobile platforms or to run my own local yarn store.
+              </p>
+            </div>
+            <div class="col-sm-1 col-md-2"></div>
+          </div>
         </div>
-        <div class="col-lg-8">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna eget est lorem ipsum dolor sit. Faucibus ornare suspendisse sed nisi lacus sed viverra. Diam vel quam elementum pulvinar etiam non quam lacus. Ac odio tempor orci dapibus ultrices. Lorem donec massa sapien faucibus. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Nibh mauris cursus mattis molestie a. Lorem ipsum dolor sit amet consectetur adipiscing elit. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Massa sapien faucibus et molestie ac feugiat sed lectus. Tellus at urna condimentum mattis pellentesque id nibh tortor. Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Amet consectetur adipiscing elit duis tristique. Morbi tristique senectus et netus et.
-          </p>
+
+        <!-- Resume Section -->
+        <div class="resume spacing" id="resume">
+          <!-- Name and Headding -->
+          <div class="row resume-row-spacing">
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+              <h2>Ian<br>Harris</h2>
+            </div>
+            <div class="col-md-2">
+              <ul class="resume-links">
+                <li><a href="https://github.com/ianharris97" target="_blank">github.com/ianharris97</a></li>
+                <li><a href="https://www.linkedin.com/in/johnianharris/" target="_blank">linkedin.com/in/johnianharris</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+
+          <!-- Profile Sections -->
+          <div class="row resume-row-spacing">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+              <h3>Profile</h3>
+            </div>
+            <div class="col-md-6">
+                <p>
+                  I am a senior at the University of Mississippi and am looking to begin my career in web development. With my minors in computer science and graphic design, I have gained knowledge and developed skills in both the development and design of websites. I am always looking for new experiences to further myself, and love learning new things in the process.
+                </p>
+              </div>
+              <div class="col-md-2"></div>
+          </div>
+
+          <!-- Education Section -->
+          <div class="row resume-row-spacing">
+              <div class="col-md-2"></div>
+              <div class="col-md-2">
+                <h3>Education</h3>
+              </div>
+              <div class="col-md-6">
+                <p>
+                  <strong>University of Mississippi, Oxford, MS - Anticipated Graduation Date: May 2020</strong><br>
+                  Bachelor’s of Multi-Disciplinary Studies <br>
+                  - Minor in Computer Science <br>
+                  - Minor in Digital Media emphasis Graphic Design <br>
+                  - Minor in General Business <br>
+                </p>
+                <p>
+                  <strong>Tech901, Memphis, TN - April 2020</strong> <br>
+                  Web Programming
+                </p>
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+
+            <!-- Coursework Section -->
+            <div class="row resume-row-spacing">
+              <div class="col-md-2"></div>
+              <div class="col-md-2">
+                <h3>Relevant<br>Coursework</h3>
+              </div>
+              <div class="col-md-6">
+                <p>
+                  Data Structures and Algorithm Development <br>
+                  Models of Computation <br>
+                  Programming in Java I-III <br>
+                  Special Topics in C++ <br>
+                  Discrete Mathematics <br>
+                  Calculus I-II <br>
+                  Typography and Print Design <br>
+                  Web and Mobile Design <br>
+                </p>
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+
+            <!-- Work Experience Section -->
+            <div class="row resume-row-spacing">
+              <div class="col-md-2"></div>
+              <div class="col-md-2">
+                <h3>Work<br>Experience</h3>
+              </div>
+              <div class="col-md-6">
+                <p>
+                  <strong>Front End Supervisor, Ross Dress For Less, Oxford, MS - January 2017 - June 2019</strong><br>
+                  - Provided superior customer service <br>
+                  - Processed customer purchases, returns, and exchanges efficiently <br>
+                  - Oversaw other cashiers and authorize and approve required transactions <br>
+                  - Worked effectively within a team setting
+                </p>
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+
+            <!-- Skills Sections -->
+            <div class="row resume-row-spacing">
+              <div class="col-md-2"></div>
+              <div class="col-md-2">
+                <h3>Technical<br>Skills</h3>
+              </div>
+              <div class="col-md-6">
+                <p>
+                  Java, C/C++, HTML, CSS, JavaScript, ReactJS, Bootstrap, Git, Python, Swift, Adobe Illustrator, Adobe InDesign, Adobe XD, Affinity Designer, Procreate
+                </p>
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+
+            <div class="row resume-row-spacing download-button">
+              <div class="col-md-12 d-flex justify-content-center">
+                  <a href="./Resources/IanHarrisResume.pdf" download>download</a>
+              </div>
+            </div>
+
         </div>
-        <div class="col-lg-2"></div>
-      </div>
-
-<!-- Projects Section -->
-
-      <div class="row no-gutters align-items-center projects">
-        <div class="col-lg-2">
-          <h1>projects</h1>
-        </div>
-        <div class="col-lg-8">
-        </div>
-        <div class="col-lg-2"></div>
-      </div>
 
 
 
 
-
-
-
-
-
-
+<!-- clossing container tag -->
     </div>
 
-
-
-
-
-
     <!-- Optional JavaScript -->
+
+    <script src="./menu.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -2,7 +2,6 @@ var menuButton = document.querySelector('.menu-button');
 var menuList = document.querySelector('.menu-list');
 
 function showMenuList() {
-  menuList
   menuButton.style.display = 'none';
   menuList.style.display = 'block';
 }

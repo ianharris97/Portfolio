@@ -1,26 +1,40 @@
+/* Universial Styling */
 * {
   margin: 0;
   padding: 0;
 }
 
-.spacing {
-  margin: 150px 0;
-}
-
-.section-title {
-  transform: rotate(90deg);
-  transform-origin: top;
-
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 200px;
-  color: rgba(144, 173, 130, 0.25);
-}
-
-.p {
+p {
   font-family: 'Nunito', sans-serif;
   font-size: 15px;
   color: #1E1E1E;
+}
+
+.spacing {
+  padding: 200px 0;
+}
+
+.section-title {
+  margin-left: 10px;
+  z-index: -1;
+}
+
+.links {
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  color: #1E1E1E;
+}
+
+.links:hover {
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  color: #1E1E1E;
+}
+
+.row-spacing {
+  margin-bottom: 100px;
 }
 
 /* Menu*/
@@ -70,12 +84,15 @@
   color: rgba(30, 30, 30, 0.25);
 }
 
-.menu-list a:active {
-  /* text-decoration: none; */
-  color: rgba(30, 30, 30, 0.25);
+/* Landing Section */
+.phone {
+  display: none;
 }
 
-/* Landing Section */
+.normal {
+  display: block;
+}
+
 .landing {
   height: 100vh;
   display: flex;
@@ -107,11 +124,21 @@
   margin: 25px 0;
 }
 
+/* Projects Section */
+.pT {
+  left: -30px;
+  position: relative;
+}
+
 /* About Section */
 
+.about {
+  /* padding: 250px 0px; */
+}
+
 /* Resume Section */
-.resume-row-spacing {
-  margin: 50px 0;
+.resume {
+  /* padding: 250px 0px; */
 }
 
 .resume h2 {
@@ -125,38 +152,41 @@
 .resume h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  font-size: 25px;
+  color: #1E1E1E;
+}
+
+.download-button a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 30px;
-  color: #1E1E1E;
-}
-
-.resume-links {
-  text-align: right;
-}
-
-.resume-links li {
-  list-style: none;
-}
-
-.resume-links a{
+  color: rgba(144, 173, 130, 0.50);
   text-decoration: none;
-  font-family: 'Nunito', sans-serif;
-  font-size: 15px;
-  color: #1E1E1E;
-}
-.resume-links a:hover{
-  text-decoration: none;
-  font-family: 'Nunito', sans-serif;
-  font-size: 15px;
-  color: #1E1E1E;
 }
 
-.download-button a, a:hover {
+.download-button a:hover {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 30px;
   color: rgba(144, 173, 130, 0.25);
   text-decoration: none;
 }
+
+/* Contact Section */
+
+.contact h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #1E1E1E;
+}
+
+.contact-links li {
+  list-style: none;
+}
+
+
+
 
 
 
@@ -175,6 +205,35 @@
   .job-descript {
     font-size: 25px;
   }
+
+  .phone {
+    display: block;
+  }
+
+  .normal {
+    display: none;
+  }
+
+  .section-title {
+    display: none;
+  }
+
+  .section-title-alt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 75px;
+    color: rgba(144, 173, 130, 0.25);
+    margin: 25px 0px;
+  }
+
+  .spacing {
+    padding: 75px 0px;
+  }
+
+  .row-spacing {
+    margin-bottom: 50px;
+  }
+
 }
 
 /* sm */
@@ -191,6 +250,14 @@
   .job-descript {
     font-size: 25px;
   }
+
+    .phone {
+      display: none;
+    }
+
+    .normal {
+      display: block;
+    }
 }
 
 /* md */
@@ -207,6 +274,18 @@
   .job-descript {
     font-size: 25px;
   }
+  .resume h3 {
+    font-size: 20px;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .normal {
+    display: block;
+  }
+
 }
 
 /* lg */
@@ -218,5 +297,18 @@
 
   .green-rect {
     height: 550px;
+  }
+
+  .resume h3 {
+    font-size: 23px;
+  }
+
+
+  .phone {
+    display: none;
+  }
+
+  .normal {
+    display: block;
   }
 }

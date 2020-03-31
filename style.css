@@ -124,16 +124,35 @@ p {
   margin: 25px 0;
 }
 
-/* Projects Section */
-.pT {
-  left: -30px;
-  position: relative;
-}
-
 /* About Section */
 
 .about {
   /* padding: 250px 0px; */
+}
+
+/* Projects Section */
+.pT {
+  left: -41px;
+  position: relative;
+}
+
+.project-spacing {
+  padding-bottom: 200px;
+}
+
+.projects h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #1E1E1E;
+}
+
+.right-just {
+  text-align: right;
+}
+
+.project-img {
+  width: 100%;
 }
 
 /* Resume Section */
@@ -285,7 +304,6 @@ p {
   .normal {
     display: block;
   }
-
 }
 
 /* lg */
@@ -311,4 +329,5 @@ p {
   .normal {
     display: block;
   }
+
 }

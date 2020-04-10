@@ -124,12 +124,6 @@ p {
   margin: 25px 0;
 }
 
-/* About Section */
-
-.about {
-  /* padding: 250px 0px; */
-}
-
 /* Projects Section */
 .pT {
   left: -41px;
@@ -145,6 +139,7 @@ p {
   font-weight: 700;
   font-size: 25px;
   color: #1E1E1E;
+  white-space: nowrap;
 }
 
 .right-just {
@@ -180,9 +175,6 @@ p {
 }
 
 /* Resume Section */
-.resume {
-  /* padding: 250px 0px; */
-}
 
 .resume h2 {
   font-family: 'Montserrat', sans-serif;
@@ -227,11 +219,6 @@ p {
 .contact-links li {
   list-style: none;
 }
-
-
-
-
-
 
 /* Media Queries */
 /* xs */
@@ -318,7 +305,7 @@ p {
     font-size: 25px;
   }
   .resume h3 {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .phone {
